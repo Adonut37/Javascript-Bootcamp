@@ -1,0 +1,22 @@
+.card {
+    background-color: blueviolet;
+    width: 400px;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: blanchedalmond;
+}
+
+h2{
+    color: burlywood;
+}
+
+h3{
+    color: crimson;
+}
+
+footer{
+    color: darkmagenta;
+}
