@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        let input = prompt("Enter your password:")
+        //new concept - promise is an object that deals with thr output-reject, or take on (resolved)
+        const checkCredentials = new Promise(function(resolve, reject) {
+            if(imput == "MITBootcamp") {
+                setTimeout(function() {
+                    resolve("Access Granted");
+                }, 2000)
+            }
+
+            else {
+                setTimeout(function() {
+                    reject("Access Denied");
+                    console.error();
+                }, 2000)
+            }
+
+        });
+        checkCredentials.then(function(output) {
+            document.getElementById('access').innerHTML = output;
+        }).catch(function(error) {
+            document.getElementById('access').innerHTML =error;
+        });
+
+    </script>
+    <body>
+        <h1 id = 'access'></h1>
+    </body>
+</html>
